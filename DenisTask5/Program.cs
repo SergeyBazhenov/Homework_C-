@@ -26,8 +26,16 @@ while (1 > 0)
             break;
 
         case "setname":
+            if (name != "")
+            {
+                Console.WriteLine("Имя уже установлено.");
+            }
+            else 
+            {
             Console.Write("Введите Ваше имя: ");
             name = Console.ReadLine();
+            
+            }
             break;
 
         case "setpassword":
