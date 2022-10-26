@@ -74,13 +74,13 @@ while (1 > 0)
             {
                 Console.Write("Для того чтобы увидеть Имя нужно ввести пароль: ");
                 string passwordUser = Console.ReadLine();
-                if (passwordUser == password)
+                if (passwordUser != password || passwordUser == "")
                 {
-                    Console.WriteLine(name);
+                    Console.WriteLine("Пароль не верен!");
                 }
                 else
                 {
-                    Console.WriteLine("Пароль не верен!");
+                    Console.WriteLine(name);
                 }
             }
             break;
